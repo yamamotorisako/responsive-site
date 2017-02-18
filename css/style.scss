@@ -1,0 +1,127 @@
+@import "compass";
+@import url(https://fonts.googleapis.com/css?family=Abel);
+// font-family
+$baseFontFamily :"游ゴシック", YuGothic, "メイリオ",Verdana, "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+
+// colors
+$baseColor: #fdfcf6;
+$subColor: #FB966E;
+$keyColor: #14c0c9;
+$fontColor: #4c4c4c;
+
+
+p.resizeimage img{
+    width: 100%;
+}
+
+/* Align
+------------------------------------------------------------*/
+.text-center {
+  text-align: center;
+  }
+  
+/* Layout
+------------------------------------------------------------*/
+.block-center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+  
+/* Font
+------------------------------------------------------------*/
+.abel {
+  font-family: 'Abel', sans-serif;
+}
+.uppercase {
+  text-transform: uppercase;
+}
+
+// Skills
+#skills {
+  background-color: $subColor;
+  
+  .container {
+    @include display-flex;
+    justify-content: space-between;
+    @include flex-direction(column);    // スキルボックスを縦に並べる
+    padding-bottom: 30px;
+  }
+  h2 {
+    color: $baseColor;
+    padding-top: 60px;
+    margin-bottom: 30px;
+    font-size: 2rem;
+    font-weight: bold;
+  }
+  .skill-box {
+    @include flex(1);
+    margin: 10px 50px;                     // 上下にマージン
+    padding: 30px;
+    background-color: $baseColor;
+    @include border-radius(4px);
+    @include box-sizing(border-box);
+  }
+  h3 {
+    @extend .abel;
+    @extend .uppercase;
+    color: $keyColor;
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+  }
+}
+
+#button-area{
+        height: 150px;
+        h1{
+            font-size: 1rem;
+            margin: 50px;
+        }
+        .button {
+        width:200px;
+        font-size: 1.2rem;
+        font-weight:bold;
+        text-decoration:none;
+        display:block;
+        text-align:center;
+        padding:8px 0 10px;
+        background-color: $subColor;
+        color: $baseColor;
+        border-radius: 5px;
+        margin: 0 auto;
+    }
+    }
+
+// desktop
+@media (min-width: 769px) {
+
+  // Skills
+  #skills {
+    .container {
+      @include flex-direction(row);     
+      justify-content: space-between;
+      padding-bottom: 60px;
+    }
+    .skill-box {
+      margin: 0 10px;
+    }
+    
+    .lf{
+        margin-left: 30px;
+    }
+    
+    .rgh{
+        margin-right: 30px;
+    }
+    
+    h2{
+        margin-bottom: 40px;
+    }
+  }
+}
+
+footer{
+    margin-top: 70px;
+    text-align: center;
+    color: #a2a2a2;
+}

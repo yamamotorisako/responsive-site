@@ -1,0 +1,94 @@
+@import url(https://fonts.googleapis.com/css?family=Abel);
+p.resizeimage img {
+  width: 100%; }
+
+/* Align
+------------------------------------------------------------*/
+.text-center {
+  text-align: center; }
+
+/* Layout
+------------------------------------------------------------*/
+.block-center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto; }
+
+/* Font
+------------------------------------------------------------*/
+.abel, #skills h3 {
+  font-family: 'Abel', sans-serif; }
+
+.uppercase, #skills h3 {
+  text-transform: uppercase; }
+
+#skills {
+  background-color: #FB966E; }
+  #skills .container {
+    display: -webkit-flex;
+    display: flex;
+    justify-content: space-between;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    padding-bottom: 30px; }
+  #skills h2 {
+    color: #fdfcf6;
+    padding-top: 60px;
+    margin-bottom: 30px;
+    font-size: 2rem;
+    font-weight: bold; }
+  #skills .skill-box {
+    -webkit-flex: 1;
+    flex: 1;
+    margin: 10px 50px;
+    padding: 30px;
+    background-color: #fdfcf6;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box; }
+  #skills h3 {
+    color: #14c0c9;
+    margin-bottom: 20px;
+    font-size: 1.5rem; }
+
+#button-area {
+  height: 150px; }
+  #button-area h1 {
+    font-size: 1rem;
+    margin: 50px; }
+  #button-area .button {
+    width: 200px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    padding: 8px 0 10px;
+    background-color: #FB966E;
+    color: #fdfcf6;
+    border-radius: 5px;
+    margin: 0 auto; }
+
+@media (min-width: 769px) {
+  #skills .container {
+    -webkit-flex-direction: row;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-bottom: 60px; }
+  #skills .skill-box {
+    margin: 0 10px; }
+  #skills .lf {
+    margin-left: 30px; }
+  #skills .rgh {
+    margin-right: 30px; }
+  #skills h2 {
+    margin-bottom: 40px; } }
+footer {
+  margin-top: 70px;
+  text-align: center;
+  color: #a2a2a2; }
+
+/*# sourceMappingURL=style.css.map */
